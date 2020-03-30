@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import React from 'react'
 import Prism from '@theme-ui/prism'
 import { kebabCase } from 'lodash'
 
