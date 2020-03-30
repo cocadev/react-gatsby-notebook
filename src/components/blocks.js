@@ -47,6 +47,7 @@ export const Embed = ({ src, sx, ...props }) => (
       width="100%"
       height="512"
       style={{ display: 'block', maxWidth: '100%' }}
+      alt=""
     />
   </div>
 )
