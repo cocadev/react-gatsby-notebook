@@ -58,7 +58,7 @@ export default ({ xl, ...props }) => {
   const path = props.location.pathname
   const home = path === '/'
   if (home) xl = true
-  const base = '@lachlanjc/notebook'
+  const base = '@kingofdevs/react-gatsby-notebook'
   const name = home ? base : getName(path)
 
   return (
@@ -95,7 +95,7 @@ export default ({ xl, ...props }) => {
             textDecoration: 'none'
           }}
         >
-          @lachlanjc
+          @kingofdevs
           {!home && '/notebook'}
         </Styled.a>
         <ColorSwitcher />
@@ -113,7 +113,7 @@ export default ({ xl, ...props }) => {
         <Icon glyph="view" sx={{ mr: 2 }} />
         Page views:
         <img
-          src={`https://lachlanjc-analytics.glitch.me/counter.png?fallback=notebook.lachlanjc.me&color=${theme.colors.secondary.replace(
+          src={`https://kingofdevs-analytics.glitch.me/counter.png?fallback=notebook.kingofdevs.me&color=${theme.colors.secondary.replace(
             '#',
             '%23'
           )}`}
@@ -131,7 +131,7 @@ export default ({ xl, ...props }) => {
       >
         <Avatar />
         <a
-          href="https://twitter.com/lachlanjc"
+          href="https://twitter.com/kingofdevs"
           title="Twitter"
           variant="styles.navitem"
           sx={{ color: 'primary', mx: 2 }}
@@ -139,7 +139,7 @@ export default ({ xl, ...props }) => {
           <Icon glyph="twitter" size={36} />
         </a>
         <a
-          href="https://github.com/lachlanjc/notebook"
+          href="https://github.com/kingofdevs/notebook"
           title="GitHub"
           variant="styles.navitem"
           sx={{ color: 'primary', mx: 2 }}

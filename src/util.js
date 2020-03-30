@@ -40,7 +40,7 @@ export const getDescription = path => {
 
 export const getImage = path => {
   if (path === '/') {
-    return 'https://notebook-cards.lachlanjc.now.sh/Notebook.png?fontSize=400px'
+    return 'https://notebook-cards.kingofdevs.now.sh/Notebook.png?fontSize=400px'
   }
   let name = getName(path.toString())
   let caption
@@ -57,5 +57,5 @@ export const getImage = path => {
   }
   name = encodeURIComponent(name)
   caption = encodeURIComponent(caption)
-  return `https://notebook-cards.lachlanjc.now.sh/${name}.png?caption=${caption}&theme=${theme}${params}`
+  return `https://notebook-cards.kingofdevs.now.sh/${name}.png?caption=${caption}&theme=${theme}${params}`
 }
