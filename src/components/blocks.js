@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import React from 'react'
 import YouTubePlayer from 'react-player/lib/players/YouTube'
 
 export const Container = ({ wide, ...props }) => (
