@@ -5,7 +5,6 @@ import Avatar from './components/avatar'
 import Icon from './components/icon'
 import Meta from './components/meta'
 import { getName, getDescription, getImage } from './util'
-import theme from './gatsby-plugin-theme-ui'
 
 const ColorSwitcher = props => {
   const [mode, setMode] = useColorMode()
