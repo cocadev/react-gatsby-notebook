@@ -100,27 +100,7 @@ export default ({ xl, ...props }) => {
         </Styled.a>
         <ColorSwitcher />
       </header>
-      <p
-        variant="container"
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          color: 'secondary',
-          mt: 0,
-          mb: [3, 4]
-        }}
-      >
-        <Icon glyph="view" sx={{ mr: 2 }} />
-        Page views:
-        <img
-          src={`https://kingofdevs-analytics.glitch.me/counter.png?fallback=notebook.kingofdevs.me&color=${theme.colors.secondary.replace(
-            '#',
-            '%23'
-          )}`}
-          alt="View counter"
-          style={{ verticalAlign: 'bottom' }}
-        />
-      </p>
+     
       {props.children}
       <div
         sx={{
@@ -147,7 +127,7 @@ export default ({ xl, ...props }) => {
           <Icon glyph="github" size={36} />
         </a>
         <a
-          href="mailto:lachlan@hackpenn.com"
+          href="mailto:kingofdevs@notfound.com"
           title="Email"
           variant="styles.navitem"
           sx={{ color: 'primary', mx: 2 }}
