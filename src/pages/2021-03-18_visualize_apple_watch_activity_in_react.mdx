@@ -3,13 +3,13 @@ import { AppGrid, CodeSandbox, Embed } from '../components/blocks'
 
 # Visualizing Apple Watch Activity with React
 
-Apple Watch [tracks your physical activity](https://www.apple.com/watch/close-your-rings/) throughout the day with a series of concentric rings, the data for which is saved to the Health app on your iPhone. Last year, for my [2019 in Review](https://2019.lachlanjc.com/activity), I wanted to visualize my activity rings on the web.
+Apple Watch [tracks your physical activity](https://www.apple.com/watch/close-your-rings/) throughout the day with a series of concentric rings, the data for which is saved to the Health app on your iPhone. Last year, for my [2019 in Review](https://2019.google.com/activity), I wanted to visualize my activity rings on the web.
 
 This article will guide you through exporting the data using [Shortcuts](https://support.apple.com/guide/shortcuts/welcome/ios) on your iPhone, then using my [React](https://reactjs.org/) component to render the rings on a website.
 
 ## Saving activity data as JSON
 
-I built a shortcut called [**Activity Export**](https://www.icloud.com/shortcuts/29a9cf0990fd46be9e90322f8c5f9b8a). It uses [Toolbox Pro for Shortcuts](https://apps.apple.com/us/app/toolbox-pro-for-shortcuts/id1476205977?uo=4) for accessing the data & [Jayson](https://apps.apple.com/us/app/jayson/id1447750768?uo=4) for previewing/saving the JSON (both of which are on my [essential iOS apps list](https://notebook.lachlanjc.com/tools/#i-pad-apps)), so you’ll want to grab those from the App Store if you haven’t used them before.
+I built a shortcut called [**Activity Export**](https://www.icloud.com/shortcuts/29a9cf0990fd46be9e90322f8c5f9b8a). It uses [Toolbox Pro for Shortcuts](https://apps.apple.com/us/app/toolbox-pro-for-shortcuts/id1476205977?uo=4) for accessing the data & [Jayson](https://apps.apple.com/us/app/jayson/id1447750768?uo=4) for previewing/saving the JSON (both of which are on my [essential iOS apps list](https://notebook.google.com/tools/#i-pad-apps)), so you’ll want to grab those from the App Store if you haven’t used them before.
 
 <AppGrid my={4}>
 
@@ -165,11 +165,11 @@ If you want to jazz it up, show the dates & add some styling:
 
 ## You did it!
 
-Indeed. After I first wrote this component, I made [this prototype website](https://rings.now.sh) to try them with real data, which is [open source here](https://github.com/lachlanjc/rings).
+Indeed. After I first wrote this component, I made [this prototype website](https://rings.now.sh) to try them with real data, which is [open source here](https://github.com/eugene/rings).
 
 <Embed src="https://rings.now.sh" />
 
-For my 2019 in Review page, I wanted to format the rings in a yearlong calendar, delineated by month. I used some [Lodash methods](https://lodash.com/) & [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) (via [Theme UI](https://theme-ui.com/)), which you can [check out here](https://github.com/lachlanjc/2019/blob/main/components/activity/rings.js).
+For my 2019 in Review page, I wanted to format the rings in a yearlong calendar, delineated by month. I used some [Lodash methods](https://lodash.com/) & [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) (via [Theme UI](https://theme-ui.com/)), which you can [check out here](https://github.com/eugene/2019/blob/main/components/activity/rings.js).
 
 ## Relevant resources
 

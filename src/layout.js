@@ -51,7 +51,7 @@ const ColorSwitcher = props => {
 const Layout = ({ xl, ...props }) => {
   const path = props.location.pathname
   const home = path === '/'
-  const base = '@lachlanjc/notebook'
+  const base = '@eugene/notebook'
   const name = home ? base : getName(path)
   const counterColor = theme.colors.secondary.replace('#', '%23')
 
@@ -89,7 +89,7 @@ const Layout = ({ xl, ...props }) => {
             mr: 'auto'
           }}
         >
-          @lachlanjc
+          @eugene
           {!home && '/notebook'}
         </Link>
         <ColorSwitcher />
@@ -126,13 +126,13 @@ const Layout = ({ xl, ...props }) => {
         }}
       >
         <Avatar />
-        <a href="https://twitter.com/lachlanjc" title="Twitter">
+        <a href="https://twitter.com/eugene" title="Twitter">
           <Icon glyph="twitter" size={36} />
         </a>
-        <a href="https://github.com/lachlanjc/notebook" title="GitHub">
+        <a href="https://github.com/eugene/notebook" title="GitHub">
           <Icon glyph="github" size={36} />
         </a>
-        <a href="mailto:lachlanjc@hey.com" title="Email">
+        <a href="mailto:eugene@hey.com" title="Email">
           <Icon glyph="email" size={36} />
         </a>
       </Flex>

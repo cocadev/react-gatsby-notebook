@@ -1,12 +1,11 @@
 {
-  "name": "@lachlanjc/notebook",
+  "name": "@eugene/notebook",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build"
   },
-  "author": "Lachlan Campbell <lachlanjc@hey.com>",
   "license": "MIT",
   "private": true,
   "dependencies": {
