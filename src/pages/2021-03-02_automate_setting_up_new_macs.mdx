@@ -3,21 +3,21 @@
 I recently erased my MacBook Pro to set it up fresh, then soon after, got a work laptop.
 Setting up a new Mac, with all the tools one needs as a developer, is a nontrivial process, & ripe for automation.
 
-After being a longtime fan of the [Thoughtbot Laptop](https://github.com/thoughtbot/laptop) project to automate installation of various development tools, I wanted to customize it. I [forked the project](https://github.com/eugene/laptop) to set up all the tools I use, enable hidden files on macOS, & then documented the manual steps I take as well. Since I continue to update that project, check out [its README](https://github.com/eugene/laptop#README) for an up-to-date list of what it sets up, but it includes Homebrew, Git, Node, Yarn, Ruby, & a ton of other developer tools.
+After being a longtime fan of the [Thoughtbot Laptop](https://github.com/thoughtbot/laptop) project to automate installation of various development tools, I wanted to customize it. I [forked the project](https://github.com/lachlanjc/laptop) to set up all the tools I use, enable hidden files on macOS, & then documented the manual steps I take as well. Since I continue to update that project, check out [its README](https://github.com/lachlanjc/laptop#README) for an up-to-date list of what it sets up, but it includes Homebrew, Git, Node, Yarn, Ruby, & a ton of other developer tools.
 
 ## My macOS setup process
 
 - During setup, skip Siri & Screen Time, enable all the other default settings
-- In System Preferences, [turn on DND, 5:00am–4:59am](https://twitter.com/eugene/status/1355998974226870273?s=20) (then Cmd-drag DND out of the menu bar)
+- In System Preferences, [turn on DND, 5:00am–4:59am](https://twitter.com/lachlanjc/status/1355998974226870273?s=20) (then Cmd-drag DND out of the menu bar)
 - In the Keyboard settings:
     - Modifier Keys. Remap Caps Lock to Escape
     - Customize Control Strip. Remove Siri, add Sleep
     - Shortcuts. Enable "Use keyboard navigation"
     - Input Sources. Disable "Show Input menu in menu bar"
-- Download my [Laptop script](https://github.com/eugene/laptop) & execute it:
+- Download my [Laptop script](https://github.com/lachlanjc/laptop) & execute it:
 
     ```sh
-    curl --remote-name https://raw.githubusercontent.com/eugene/laptop/main/mac
+    curl --remote-name https://raw.githubusercontent.com/lachlanjc/laptop/main/mac
     sh mac 2>&1 | tee ~/laptop.log
     ```
 
@@ -41,12 +41,12 @@ After being a longtime fan of the [Thoughtbot Laptop](https://github.com/thought
 - Set up code folders (`~/src`, then grouped by GitHub org)
     - `mkdir src`
     - `cd src`
-    - `mkdir eugene`
+    - `mkdir lachlanjc`
     - `mkdir {OTHER_GITHUB_ORGS}`
     - Add `src` to Finder sidebar
     - Switch Finder to Column view
 
-![Screenshot of my code folder setup in Finder](https://cloud-cmi6k5btn-eugene.vercel.app/2021-03-02_6ub3tkuuykh8fvg8h1h19mj4w7vantua.png)
+![Screenshot of my code folder setup in Finder](https://cloud-cmi6k5btn-lachlanjc.vercel.app/2021-03-02_6ub3tkuuykh8fvg8h1h19mj4w7vantua.png)
 
 ## Before I factory reset my Mac
 
