@@ -108,7 +108,7 @@ const Layout = ({ xl, ...props }) => {
         <Icon glyph="view" sx={{ mr: 2 }} />
         Site views:
         <img
-          src={`https://lachlanjc-analytics.glitch.me/counter.png?fallback=notebook.lachlanjc.com&color=${counterColor}`}
+          src={`https://eugene-analytics.glitch.me/counter.png?fallback=notebook.eugene.com&color=${counterColor}`}
           alt="View counter"
         />
       </Flex>

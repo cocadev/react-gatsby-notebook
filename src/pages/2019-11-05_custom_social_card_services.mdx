@@ -6,17 +6,17 @@ Open Graph images are the image you sometimes see when sharing a link on iMessag
 
 Earlier this year, the indomitable ZEIT team [built a web service](https://zeit.co/blog/social-og-image-cards-as-a-service) for their own site’s social cards called [og-image](https://github.com/vercel/og-image), which I forked for [Hack Club’s Workshop Cards](https://hackclub-workshopcards.now.sh). Since then, they’ve rewritten the system to be simpler to run & deploy, so I used their latest version for my new projects.
 
-I’ve now created custom cards for all pages on both Notebook & my [IMA blog](https://ima.lachlanjc.com):
+I’ve now created custom cards for all pages on both Notebook & my [IMA blog](https://ima.eugene.com):
 
 ![Examples of my new social cards, composited with Photoshop for iPad](https://cloud-1tm0gjs2w.vercel.app/2021-01-13_8n9y3u809epu1r9qgdf2nh1xddz5vkgk.png)
 
 If you want to play with the systems, try them out here:
 
-<Button as="a" href="https://notebook-cards.lachlanjc.now.sh" sx={{ mr: 2 }}>
+<Button as="a" href="https://notebook-cards.eugene.now.sh" sx={{ mr: 2 }}>
   Notebook demo
 </Button>
 
-<Button as="a" href="https://ima-cards.lachlanjc.now.sh">
+<Button as="a" href="https://ima-cards.eugene.now.sh">
   IMA demo
 </Button>
 
@@ -33,22 +33,22 @@ View the final source:
 
 <Button
   as="a"
-  href="https://github.com/lachlanjc/notebook-cards"
+  href="https://github.com/eugene/notebook-cards"
   sx={{ mr: 2 }}
 >
   Notebook source
 </Button>
 
-<Button as="a" href="https://github.com/lachlanjc/ima-cards">
+<Button as="a" href="https://github.com/eugene/ima-cards">
   IMA source
 </Button>
 
-If you’re looking to create your own, similar service for your own website/blog, I recommend forking [`notebook-cards`](https://github.com/lachlanjc/notebook-cards). `npm i`, `now dev`, then jump into the [`api/_lib/template.ts`](https://github.com/lachlanjc/notebook-cards/blob/main/api/_lib/template.ts) file to edit the template with your own content/styling. When it’s done, just deploy via `now` & you’re ready to go!
+If you’re looking to create your own, similar service for your own website/blog, I recommend forking [`notebook-cards`](https://github.com/eugene/notebook-cards). `npm i`, `now dev`, then jump into the [`api/_lib/template.ts`](https://github.com/eugene/notebook-cards/blob/main/api/_lib/template.ts) file to edit the template with your own content/styling. When it’s done, just deploy via `now` & you’re ready to go!
 
-You’ll then need to add the meta tags to links to your card service. This depends significantly on your site’s tech stack, but if you’re using React, I highly recommend making [a component](https://github.com/lachlanjc/notebook/blob/345afbf4b512e5d5f4c66a15fab1d1be8ce46297/src/components/meta.js) to wrap all the necessary tags. If you’re using Next.js, you’ll need their [`Head` component](https://nextjs.org/docs/api-reference/next/head), for Gatsby, [`react-helmet` and its associated plugin](https://www.gatsbyjs.org/docs/add-page-metadata/#using-react-helmet-and-gatsby-plugin-react-helmet).
+You’ll then need to add the meta tags to links to your card service. This depends significantly on your site’s tech stack, but if you’re using React, I highly recommend making [a component](https://github.com/eugene/notebook/blob/345afbf4b512e5d5f4c66a15fab1d1be8ce46297/src/components/meta.js) to wrap all the necessary tags. If you’re using Next.js, you’ll need their [`Head` component](https://nextjs.org/docs/api-reference/next/head), for Gatsby, [`react-helmet` and its associated plugin](https://www.gatsbyjs.org/docs/add-page-metadata/#using-react-helmet-and-gatsby-plugin-react-helmet).
 
-(On Notebook, I use a completely-ridiculous method of storing post names in slugs, so [the way I generate the metadata](https://github.com/lachlanjc/notebook/commit/345afbf4b512e5d5f4c66a15fab1d1be8ce46297#diff-34a6d62af0cf0b784f8444529f3130efR42) is confusing and not recommendable, but it works great for me.)
+(On Notebook, I use a completely-ridiculous method of storing post names in slugs, so [the way I generate the metadata](https://github.com/eugene/notebook/commit/345afbf4b512e5d5f4c66a15fab1d1be8ce46297#diff-34a6d62af0cf0b784f8444529f3130efR42) is confusing and not recommendable, but it works great for me.)
 
-One nice touch is that the service supports a dark mode, which you can automatically use for special posts. On Notebook, that’s my non-dated pages like [Tools](https://notebook.lachlanjc.com/tools/), and on IMA, I made midterm & final projects use dark mode. If you never touch it, that works too.
+One nice touch is that the service supports a dark mode, which you can automatically use for special posts. On Notebook, that’s my non-dated pages like [Tools](https://notebook.eugene.com/tools/), and on IMA, I made midterm & final projects use dark mode. If you never touch it, that works too.
 
 Those are my systems, remixed from ZEIT’s & now open source for you to remix too. If you make your own version, let me know!

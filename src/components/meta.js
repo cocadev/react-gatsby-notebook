@@ -5,7 +5,7 @@ const Meta = ({
   title = '@eugene/notebook',
   name = '@eugene/notebook',
   description = 'Lachlan Campbell’s daily blog, Notebook.',
-  image = 'https://notebook-cards.lachlanjc.now.sh/Notebook.png?theme=dark'
+  image = 'https://notebook-cards.eugene.now.sh/Notebook.png?theme=dark'
 }) => (
   <Helmet>
     <title>{title}</title>
