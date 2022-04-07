@@ -1,9 +1,11 @@
 import React from 'react'
-import { Box } from 'rebass'
-import Icon from '@hackclub/icons'
+import { Box } from 'theme-ui'
+import Supercon from 'supercons'
 
-export default ({ sx, ...props }) => (
+const Icon = ({ sx, ...props }) => (
   <Box as="span" sx={{ lineHeight: 0, ...sx }}>
-    <Icon {...props} />
+    <Supercon {...props} />
   </Box>
 )
+
+export default Icon

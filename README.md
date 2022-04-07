@@ -1,7 +1,7 @@
-# @kingofdevs/react-gatsby-notebook
+# @lachlanjc/notebook
 
-Daily notebook for [@kingofdevs](https://github.com/kingofdevs), built with Gatsby, MDX, & Theme UI.
+Daily notebook for [@lachlanjc](https://lachlanjc.com), built with Gatsby, MDX, & Theme UI.
 
-[**notebook.kingofdevs.me**](https://notebook.kingofdevs.me)
+[**notebook.lachlanjc.com**](https://notebook.lachlanjc.com)
 
 MIT License

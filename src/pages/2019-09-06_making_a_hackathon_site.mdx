@@ -17,13 +17,13 @@ Hackathon sites I’ve designed (you’ll notice some patterns!):
 
 </LinkList>
 
-They’re all open source on GitHub if you want to peruse the source code. The last 3 use Gatsby + [Hack Club Design System](https://design.hackclub.com), which is not an easy stack to get started with, & honestly not one I’d recommend to anyone else. The MDX stack, however, is absolutely incredible to work with. [I’ve made a few sites](https://notebook.kingofdevs.me/2019-09-06_my_websites_look_the_same/) like this.
+They’re all open source on GitHub if you want to peruse the source code. The last 3 use Gatsby + [Hack Club Design System](https://design.hackclub.com), which is not an easy stack to get started with, & honestly not one I’d recommend to anyone else. The MDX stack, however, is absolutely incredible to work with. [I’ve made a few sites](https://notebook.lachlanjc.me/2019-09-06_my_websites_look_the_same/) like this.
 
 > Before we continue, hats off to [@jxnblk](https://jxnblk.com) & friends. His design & code & philosophy are a massive inspiration to my work every day. He wrote many of the libraries & directly inspired much of this.
 
 ***
 
-*Note: I also published this section identically as a [separate post](https://notebook.kingofdevs.me/2019-09-06_explaining_next_mdx_theme_ui/).*
+*Note: I also published this section identically as a [separate post](https://notebook.lachlanjc.me/2019-09-06_explaining_next_mdx_theme_ui/).*
 
 ## Tech stack lowdown
 
@@ -59,7 +59,7 @@ You won’t be writing direct CSS anywhere on the site. You’ll instead see `sx
 - `bg` sets the `background-color` to one of the `colors` in your theme. `color` sets the text color similarly. The superpower here is that if you enable dark mode or another theme, the colors dynamically change to that theme, as defined in your theme file.
 - This is all processed by Theme UI, so [check our their website](https://theme-ui.com) for more details.
 
-I wrote a bit more about how styling is used at a component level [over here about the Hack Pennsylvania recap site](https://notebook.kingofdevs.me/2019-08-15_hack_penn_site/).
+I wrote a bit more about how styling is used at a component level [over here about the Hack Pennsylvania recap site](https://notebook.lachlanjc.me/2019-08-15_hack_penn_site/).
 
 ## Making your own hackathon site
 
@@ -73,7 +73,7 @@ If I wasn’t in college with way too much to do, I’d open source a template s
 4. Rewrite all the copy on all the pages, & update the data (sponsors, team members, social media links in the footer, etc). Your event & your team & your story is unique—tell that story!
 5. Edit `components/meta.js` with all your event details. This takes forever, but it’ll give you much better placement on Google.
 	- You’ll be listed in Google’s events section—with Windy City Hacks, our name & logo & date appeared as the first result on Google for “chicago high school hackathon.” We got a bunch of signups just from that.
-	- If you haven’t made a social card, it’s the image that appears when you share a link on Slack/iMessage/Twitter etc. You want it to show your logo and/or people hacking and/or your hackathon name. See the cards I used for my events on [my portfolio site](https://github.com/kingofdevs).
+	- If you haven’t made a social card, it’s the image that appears when you share a link on Slack/iMessage/Twitter etc. You want it to show your logo and/or people hacking and/or your hackathon name. See the cards I used for my events on [my portfolio site](https://lachlanjc.me).
 7. Update your README file. It’s good form to credit anyone’s work you’re using a chunk of (hi there!).
 8. Publish to GitHub. You’re using dozens & dozens of open source projects to make your site—pay it forward by opening up your code. The next person who comes along will learn from your code, & you’ll have new code in your portfolio as well.
 9. Deploy on Netlify! Sign in with GitHub, then make a new site from Git, pick your repo. The config settings are: `npm run build` is your build command, `out` is the resulting folder. Now, whenever you commit & push to GitHub, your site will re-deploy automatically.
