@@ -15,7 +15,7 @@
     "date-fns": "^2.23.0",
     "gatsby": "^3.10.1",
     "gatsby-plugin-catch-links": "^3.10.0",
-    "gatsby-plugin-mdx": "^2.10.0",
+    "gatsby-plugin-mdx": "^2.14.1",
     "gatsby-plugin-react-helmet": "^4.10.0",
     "gatsby-plugin-theme-ui": "^0.10.1",
     "lodash": "^4.17.21",
