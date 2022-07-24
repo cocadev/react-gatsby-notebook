@@ -1,4 +1,4 @@
-# @eugene/notebook
+# @eugene/notebook 2
 
 Daily notebook for [@eugene], built with Gatsby, MDX, & Theme UI.
 
